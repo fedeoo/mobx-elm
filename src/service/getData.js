@@ -1,4 +1,4 @@
-import fetch from '../core/fetch';
+import fetch from '../config/fetch';
 import * as home from './tempdata/home';
 import * as city from './tempdata/city';
 import * as msite from './tempdata/msite';
