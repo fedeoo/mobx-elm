@@ -1,0 +1,41 @@
+{
+  "name": "mobx-elm",
+  "version": "0.0.1",
+  "description": "mobx-elm",
+  "author": "fedeoo",
+  "license": "ISC",
+  "scripts": {
+    "start": "gourd start",
+    "build": "gourd build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedeoo/mobx-elm.git"
+  },
+  "keywords": [
+    "mobx",
+    "elm"
+  ],
+  "bugs": {
+    "url": "https://github.com/fedeoo/mobx-elm/issues"
+  },
+  "homepage": "https://github.com/fedeoo/mobx-elm#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "gourd": "^0.0.1"
+  },
+  "dependencies": {
+    "mobx": "^3.1.9",
+    "mobx-react": "^4.1.8",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
+  }
+}
