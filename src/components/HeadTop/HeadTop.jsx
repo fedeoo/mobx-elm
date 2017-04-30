@@ -10,10 +10,6 @@ import styles from './HeadTop.scss';
 
 const cx = classNames.bind(styles);
 
-const goBack = () => {
-  // TODO goBack
-};
-
 const propTypes = {
   left: PropTypes.any,
   right: PropTypes.any,
@@ -29,6 +25,16 @@ const defaultProps = {
   userInfo: null,
 };
 class HeadTop extends Component {
+  static contextTypes = {
+    router: PropTypes.object,
+  }
+  constructor() {
+    super();
+    this.goBack = this.goBack.bind(this);
+  }
+  goBack() {
+    this.context.router.history.goBack();
+  }
   renderLeft() {
     const { left } = this.props;
     if (left) {
@@ -40,7 +46,7 @@ class HeadTop extends Component {
       strokeWidth: 2,
     };
     return (
-      <section className={cx('head_goback')} onClick={goBack}>
+      <section className={cx('head_goback')} onClick={this.goBack}>
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
           <polyline points="12,18 4,9 12,0" style={polyline} />
         </svg>

@@ -9,7 +9,7 @@
   @include wh(100%, 1.95rem);
 }
 
-.head_left {
+.head_goback {
   left: 0.4rem;
   @include wh(0.6rem, 0.8rem);
   line-height: 2.2rem;
@@ -17,7 +17,7 @@
 }
 
 .head_right {
-  right: .4rem;
+  right: 0.4rem;
   @include sc(0.65rem, #fff);
   @include ct;
 }
