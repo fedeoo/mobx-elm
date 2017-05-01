@@ -1,0 +1,60 @@
+@import 'src/style/mixin';
+
+.food_types_container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .link_to_food {
+    width: 25%;
+    padding: 0.3rem 0;
+    @include fj(center);
+
+    figure {
+      img {
+        margin-bottom: 0.3rem;
+        @include wh(1.8rem, 1.8rem);
+      }
+
+      figcaption {
+        text-align: center;
+        @include sc(0.55rem, #666);
+      }
+    }
+  }
+}
+
+.swiper-container {
+  @include wh(100%, auto);
+  padding-bottom: 0.6rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 0.2rem;
+    text-align: center;
+    transition: 0.3s;
+    transform: translateZ(0);
+    z-index: 10;
+  }
+
+  .swiper-pagination-bullets {
+    left: 0;
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    @include wh(8px, 8px);
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: 0.2;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #007aff;
+  }
+}
